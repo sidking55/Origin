@@ -1,0 +1,14 @@
+C:\Users\dsala\Downloads\springboard tests\2nd case study> python ticket_sales_pipeline.py
+
+Database connection successful.
+Sales table created or already exists.
+CSV data successfully loaded into sales table.
+
+Here are the most popular tickets in the past month:
+- The North American International Auto Show
+- Carlisle Ford Nationals
+- Washington Spirits vs Sky Blue FC
+
+Database connection closed.
+
+Process finished with exit code 0
