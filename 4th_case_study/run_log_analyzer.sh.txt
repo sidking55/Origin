@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Airflow log directory - Updated with forward slashes
+LOG_DIR="C:/Users/dsala/Downloads/springboard_tests/4th_case_study/airflow-marketvol"
+
+echo "Running Airflow Log Analyzer..."
+echo "Scanning directory: $LOG_DIR"
+
+python log_analyzer.py "$LOG_DIR"
