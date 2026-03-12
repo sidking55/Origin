@@ -1,0 +1,246 @@
+PS C:\Users\dsala\downloads> cd springboard tests
+Set-Location : A positional parameter cannot be found that accepts argument 'tests'.
+At line:1 char:1
++ cd springboard tests
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\dsala\downloads> cd..
+PS C:\Users\dsala> cd downloads
+PS C:\Users\dsala\downloads> cd springboard_tests
+PS C:\Users\dsala\downloads\springboard_tests> cd 3rd_case _study
+Set-Location : A positional parameter cannot be found that accepts argument '_study'.
+At line:1 char:1
++ cd 3rd_case _study
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\dsala\downloads\springboard_tests> cd 3rd_case_study
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study> docker compose up airflow-init
+no configuration file provided: not found
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study> docker compose up -d
+no configuration file provided: not found
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study> dir
+
+
+    Directory: C:\Users\dsala\downloads\springboard_tests\3rd_case_study
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----          3/4/2026  12:46 PM                airflow-marketvol
+
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study> cd airflow-marketvol
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> dir
+
+
+    Directory: C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----          3/4/2026  12:46 PM                dags
+da----          3/4/2026  12:46 PM                logs
+da----          3/4/2026  12:46 PM                plugins
+-a----          3/4/2026  12:56 PM          11066 docker-compose.yaml
+
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> ren docker-compose.yaml docker-compose.yml
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> dir
+
+
+    Directory: C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----          3/4/2026  12:46 PM                dags
+da----          3/4/2026  12:46 PM                logs
+da----          3/4/2026  12:46 PM                plugins
+-a----          3/4/2026  12:56 PM          11066 docker-compose.yml
+
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> cd..
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study> docker compose up airflow-init
+no configuration file provided: not found
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study> cd airflow-marketvol
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> docker compose up -d
+time="2026-03-04T13:03:23-05:00" level=warning msg="The \"AIRFLOW_UID\" variable is not set. Defaulting to a blank string."
+time="2026-03-04T13:03:23-05:00" level=warning msg="The \"AIRFLOW_UID\" variable is not set. Defaulting to a blank string."
+validating C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\docker-compose.yml: volumes.namenode additional properties 'image', 'ports', 'container_name' not allowed
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> docker compose down -v
+time="2026-03-04T13:04:08-05:00" level=warning msg="The \"AIRFLOW_UID\" variable is not set. Defaulting to a blank string."
+time="2026-03-04T13:04:08-05:00" level=warning msg="The \"AIRFLOW_UID\" variable is not set. Defaulting to a blank string."
+validating C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\docker-compose.yml: volumes.namenode additional properties 'ports', 'container_name', 'image' not allowed
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> pwd
+
+Path
+----
+C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol
+
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> ls
+
+
+    Directory: C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----          3/4/2026  12:46 PM                dags
+da----          3/4/2026  12:46 PM                logs
+da----          3/4/2026  12:46 PM                plugins
+-a----          3/4/2026  12:56 PM          11066 docker-compose.yml
+
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> docker compose up -d
+time="2026-03-04T13:05:24-05:00" level=warning msg="The \"AIRFLOW_UID\" variable is not set. Defaulting to a blank string."
+time="2026-03-04T13:05:24-05:00" level=warning msg="The \"AIRFLOW_UID\" variable is not set. Defaulting to a blank string."
+validating C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\docker-compose.yml: volumes.namenode additional properties 'container_name', 'image', 'ports' not allowed
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> docker compose up -d
+yaml: line 46: did not find expected key
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> docker compose down -v
+yaml: line 46: did not find expected key
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> docker compose down -v
+time="2026-03-04T13:08:31-05:00" level=warning msg="C:\\Users\\dsala\\downloads\\springboard_tests\\3rd_case_study\\airflow-marketvol\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] down 5/5
+ ✔ Container airflow-marketvol-airflow-init-1  Removed                                                              0.3s
+ ✔ Container airflow-marketvol-postgres-1      Removed                                                              0.3s
+ ✔ Container airflow-marketvol-redis-1         Removed                                                              0.3s
+ ✔ Network airflow-marketvol_default           Removed                                                              0.3s
+ ✔ Volume airflow-marketvol_postgres-db-volume Removed                                                              0.0s
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> docker compose up airflow-init
+time="2026-03-04T13:08:47-05:00" level=warning msg="C:\\Users\\dsala\\downloads\\springboard_tests\\3rd_case_study\\airflow-marketvol\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] up 5/5
+ ✔ Network airflow-marketvol_default           Created                                                              0.0s
+ ✔ Volume airflow-marketvol_postgres-db-volume Created                                                              0.0s
+ ✔ Container airflow-marketvol-redis-1         Created                                                              0.1s
+ ✔ Container airflow-marketvol-postgres-1      Created                                                              0.1s
+ ✔ Container airflow-marketvol-airflow-init-1  Created                                                              0.1s
+Attaching to airflow-init-1
+airflow-init-1  | ....................
+airflow-init-1  | ERROR! Maximum number of retries (20) reached.
+airflow-init-1  |
+airflow-init-1  | Last check result:
+airflow-init-1  | $ airflow db check
+airflow-init-1  | Unable to load the config, contains a configuration error.
+airflow-init-1  | Traceback (most recent call last):
+airflow-init-1  |   File "/usr/local/lib/python3.8/pathlib.py", line 1288, in mkdir
+airflow-init-1  |     self._accessor.mkdir(self, mode)
+airflow-init-1  | FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/logs/scheduler/2026-03-04'
+airflow-init-1  |
+airflow-init-1  | During handling of the above exception, another exception occurred:
+airflow-init-1  |
+airflow-init-1  | Traceback (most recent call last):
+airflow-init-1  |   File "/usr/local/lib/python3.8/logging/config.py", line 563, in configure
+airflow-init-1  |     handler = self.configure_handler(handlers[name])
+airflow-init-1  |   File "/usr/local/lib/python3.8/logging/config.py", line 744, in configure_handler
+airflow-init-1  |     result = factory(**kwargs)
+airflow-init-1  |   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/log/file_processor_handler.py", line 50, in __init__
+airflow-init-1  |     Path(self._get_log_directory()).mkdir(parents=True, exist_ok=True)
+airflow-init-1  |   File "/usr/local/lib/python3.8/pathlib.py", line 1292, in mkdir
+airflow-init-1  |     self.parent.mkdir(parents=True, exist_ok=True)
+airflow-init-1  |   File "/usr/local/lib/python3.8/pathlib.py", line 1288, in mkdir
+airflow-init-1  |     self._accessor.mkdir(self, mode)
+airflow-init-1  | PermissionError: [Errno 13] Permission denied: '/opt/airflow/logs/scheduler'
+airflow-init-1  |
+airflow-init-1  | The above exception was the direct cause of the following exception:
+airflow-init-1  |
+airflow-init-1  | Traceback (most recent call last):
+airflow-init-1  |   File "/home/airflow/.local/bin/airflow", line 5, in <module>
+airflow-init-1  |     from airflow.__main__ import main
+airflow-init-1  |   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/__init__.py", line 68, in <module>
+airflow-init-1  |     settings.initialize()
+airflow-init-1  |   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/settings.py", line 546, in initialize
+airflow-init-1  |     LOGGING_CLASS_PATH = configure_logging()
+airflow-init-1  |   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/logging_config.py", line 74, in configure_logging
+airflow-init-1  |     raise e
+airflow-init-1  |   File "/home/airflow/.local/lib/python3.8/site-packages/airflow/logging_config.py", line 69, in configure_logging
+airflow-init-1  |     dictConfig(logging_config)
+airflow-init-1  |   File "/usr/local/lib/python3.8/logging/config.py", line 808, in dictConfig
+airflow-init-1 exited with code 1
+airflow-init-1  |     dictConfigClass(config).configure()
+airflow-init-1  |   File "/usr/local/lib/python3.8/logging/config.py", line 570, in configure
+airflow-init-1  |     raise ValueError('Unable to configure handler '
+airflow-init-1  | ValueError: Unable to configure handler 'processor'
+airflow-init-1  |
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> docker compose up -d
+time="2026-03-04T13:10:22-05:00" level=warning msg="C:\\Users\\dsala\\downloads\\springboard_tests\\3rd_case_study\\airflow-marketvol\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] up 29/29
+ ✔ Image apache/hadoop:3                           Pulled                                                         122.1s
+ ✔ Container hdfs-namenode                         Created                                                        2.6s
+ ✔ Container airflow-marketvol-redis-1             Running                                                        0.0s
+ ✔ Container airflow-marketvol-postgres-1          Running                                                        0.0s
+ ✔ Container airflow-marketvol-airflow-webserver-1 Created                                                        2.6s
+ ✔ Container airflow-marketvol-airflow-worker-1    Created                                                        2.6s
+ ✔ Container airflow-marketvol-airflow-scheduler-1 Created                                                        2.7s
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> http://localhost:8080
+http://localhost:8080 : The term 'http://localhost:8080' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At line:1 char:1
++ http://localhost:8080
++ ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (http://localhost:8080:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> mk dags
+mk : The term 'mk' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ mk dags
++ ~~
+    + CategoryInfo          : ObjectNotFound: (mk:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> mkdir dags
+mkdir : An item with the specified name
+C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\dags already exists.
+At line:1 char:1
++ mkdir dags
++ ~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\dsala\...-marketvol\dags:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> ls
+
+
+    Directory: C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----          3/4/2026  12:46 PM                dags
+da----          3/4/2026  12:46 PM                logs
+da----          3/4/2026  12:46 PM                plugins
+-a----          3/4/2026   1:08 PM           1383 docker-compose.yml
+
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol> cd dags
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\dags> ls
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\dags> dir
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\dags> dir
+
+
+    Directory: C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\dags
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----          3/4/2026   1:21 PM           2041 marketvol.py
+
+
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\dags> docker compose restart
+time="2026-03-04T13:21:21-05:00" level=warning msg="C:\\Users\\dsala\\downloads\\springboard_tests\\3rd_case_study\\airflow-marketvol\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+[+] restart 0/7
+ - Container airflow-marketvol-airflow-scheduler-1 Restarting                                                       1.0s
+ - Container hdfs-namenode                         Restarting                                                       1.0s
+ - Container airflow-marketvol-airflow-webserver-1 Restarting                                                       1.0s
+ - Container airflow-marketvol-redis-1             Restarting                                                       1.0s
+ - Container airflow-marketvol-airflow-worker-1    Restarting                                                       1.0s
+ - Container airflow-marketvol-postgres-1          Restarting                                                       1.0s
+ - Container airflow-marketvol-airflow-init-1      Restarting                                                       1.0s
+PS C:\Users\dsala\downloads\springboard_tests\3rd_case_study\airflow-marketvol\dags> docker compose exec airflow-scheduler airflow scheduler
